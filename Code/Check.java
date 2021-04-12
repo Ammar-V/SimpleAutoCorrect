@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Check {
+	
+	//This method performs a swap on two adjacent characters and then checks if the word exists in the database
 	public void swapCheck(String word) {
 		ArrayList<Character> reOrder = new ArrayList<>();
 		for (int j = 0; j < word.length(); j++) {
@@ -24,7 +26,8 @@ public class Check {
 			}
 		}
 	}
-
+	
+	//This method replaces a character with another alphabet and checks to see if the word exists in the database
 	public void replaceCheck(String word) {
 		for (int j = 0; j < word.length(); j++) {
 			char[] splitWord = new char[word.length()];
@@ -43,7 +46,7 @@ public class Check {
 			}
 		}
 	}
-
+	//This method adds a character to the word and checks if it exists in the database
 	public void addCheck(String word) {
 		for (int j = 0; j < word.length() + 1; j++) {
 			ArrayList<Character> splitWord = new ArrayList<>();
@@ -63,7 +66,8 @@ public class Check {
 			}
 		}
 	}
-
+	
+	//This method removes a character from the word and checks if it exists in the database
 	public void removeCheck(String word) {
 		for (int i = 0; i < word.length() - 1; i++) {
 			ArrayList<Character> splitWord = new ArrayList<>();
